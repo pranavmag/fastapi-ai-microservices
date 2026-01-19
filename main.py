@@ -56,7 +56,8 @@ app = FastAPI(lifespan=lifespan)
 
 # 'note: Note' tells FastAPI to read the JSON body using the Note schema.
 # 'session: Session = Depends(get_session)' injects the DB connection.
-@app.post("/notes", response_model=Note)
+# added status_code=201 inside the decorator to make sure a note was created rather than status code 200
+@app.post("/notes", response_model=Note, status_code=201)
 def create_note(note: Note, session: Session = Depends(get_session)):
     # 1. Add to the "staging area"
     session.add(note)
