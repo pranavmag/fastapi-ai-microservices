@@ -29,10 +29,13 @@ Focus: Writing clean, tested code that adheres to strict typing and industry sta
 - [x] **Week 1: FastAPI & SQLModel**
     - [x] Implement strict typing with Pydantic schemas.
     - [x] Build `GET /notes` and `POST /notes` endpoints.
-    - [ ] Database persistence setup.
+    - [x] Database persistence setup.
 - [ ] **Week 2: Automated Testing (pytest)**
-    - [ ] Configure `pytest` environment.
-    - [ ] Write integration tests for API endpoints (200 OK checks).
+    - [x] Configure `pytest` environment.
+    - [x] Write integration tests for API endpoints (200 OK checks).
+    - [ ] Add 404 and 422 error tests
+    - [ ] Implement GET /notes/{id} endpoint
+    - [ ] Organize tests into multiple files
 - [ ] **Week 3: Containerization (Docker)**
     - [ ] Create `Dockerfile` for the API.
     - [ ] Set up `docker-compose` for local development.
