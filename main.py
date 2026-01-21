@@ -1,5 +1,8 @@
 from typing import Optional, List
-from sqlmodel import SQLModel, Field, select
+from contextlib import asynccontextmanager
+
+from sqlmodel import SQLModel, Field, select, create_engine, Session
+from fastapi import FastAPI, Depends
 
 
 # We inherit from SQLModel.
@@ -17,10 +20,6 @@ class Note(SQLModel, table=True):
 
     tags: Optional[str] = Field(default=None)
 
-
-
-from sqlmodel import create_engine, SQLModel, Session
-from fastapi import FastAPI, Depends
 
 # 1. SET UP THE ENGINE
 # simple sqlite file named "database.db"
@@ -44,8 +43,6 @@ def get_session():
 
 # 4. INITIALIZE APP
 # lifespan events are the new "on_startup" in FastAPI
-from contextlib import asynccontextmanager
-
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     create_db_and_tables() # Run this when server starts
