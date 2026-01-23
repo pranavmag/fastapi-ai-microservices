@@ -33,9 +33,12 @@ Focus: Writing clean, tested code that adheres to strict typing and industry sta
 - [ ] **Week 2: Automated Testing (pytest)**
     - [x] Configure `pytest` environment.
     - [x] Write integration tests for API endpoints (200 OK checks).
-    - [ ] Add 404 and 422 error tests
-    - [ ] Implement GET /notes/{id} endpoint
-    - [ ] Organize tests into multiple files
+    - [x] Add 404 and 422 error tests
+    - [x] Implement GET /notes/{id} endpoint
+    - [x] Organize tests into multiple files
+    - [ ] Organize tests into test_create.py and test_read.py
+    - [ ] Add parametrized tests for validation scenarios
+    - [ ] Measure code coverage with pytest-cov
 - [ ] **Week 3: Containerization (Docker)**
     - [ ] Create `Dockerfile` for the API.
     - [ ] Set up `docker-compose` for local development.
