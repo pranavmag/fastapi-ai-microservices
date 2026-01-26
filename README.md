@@ -40,7 +40,7 @@ Focus: Writing clean, tested code that adheres to strict typing and industry sta
     - [x] Add parametrized tests for validation scenarios
     - [x] Measure code coverage with pytest-cov
 - [ ] **Week 3: Containerization (Docker)**
-    - [ ] Create `Dockerfile` for the API.
+    - [x] Create `Dockerfile` for the API.
     - [ ] Set up `docker-compose` for local development.
 - [ ] **Week 4: Cloud Deployment (AWS)**
     - [ ] Provision AWS EC2 Free Tier instance.

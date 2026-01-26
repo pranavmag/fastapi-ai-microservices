@@ -1,0 +1,48 @@
+# --- Dependencies & Environment ---
+# Huge folder, wrong OS. We install fresh in the container.
+venv/
+.venv/
+env/
+
+# --- Python Cache ---
+# Generated files that don't belong in production
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Testing & Coverage ---
+# Tests are run in CI, not inside the production run container
+tests/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Git & Version Control ---
+# Security risk: contains project history
+.git/
+.gitignore
+
+# --- IDE Settings ---
+# Developer specific
+.vscode/
+.idea/
+*.swp
+
+# --- Documentation ---
+README.md
+
+# --- Local Data ---
+# Never ship your local test database to production!
+*.db
+*.sqlite
+
+# --- Secrets (CRITICAL) ---
+# Never copy secrets into an image
+.env
+.env.local
+
+# --- Docker Meta ---
+Dockerfile
+.dockerignore
+docker-compose.yml
