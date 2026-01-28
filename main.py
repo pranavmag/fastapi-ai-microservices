@@ -5,6 +5,8 @@ from sqlmodel import SQLModel, Field, select, create_engine, Session
 from fastapi import FastAPI, Depends, HTTPException
 from pydantic import BaseModel, field_validator
 
+import os
+
 
 # ===== DATABASE MODEL (for SQLModel/Database) =====
 class Note(SQLModel, table=True):
@@ -31,10 +33,17 @@ class NoteCreate(BaseModel):
         return v
 
 
-# 1. SET UP THE ENGINE
-sqlite_file_name = "database.db"
-sqlite_url = f"sqlite:///{sqlite_file_name}"
-engine = create_engine(sqlite_url, echo=True)
+# Dynamic database URL (PostgreSQL in Docker, SQLite for local testing)
+database_url = os.getenv("DATABASE_URL", "sqlite:///database.db")
+
+# Create engine with connection pooling
+# pool_pre_ping=True checks connection health before using
+engine = create_engine(
+    database_url,
+    echo=True,
+    pool_pre_ping=True,
+    connect_args={"check_same_thread": False} if database_url.startswith("sqlite") else {}
+)
 
 
 # 2. CREATE TABLES

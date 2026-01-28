@@ -39,48 +39,47 @@ Focus: Writing clean, tested code that adheres to strict typing and industry sta
     - [x] Organize tests into test_create.py and test_read.py
     - [x] Add parametrized tests for validation scenarios
     - [x] Measure code coverage with pytest-cov
-- [ ] **Week 3: Containerization (Docker)**
+- [ ] **Week 3: Containerization (Docker) and Cloud Deployment (AWS)**
     - [x] Create `Dockerfile` for the API.
-    - [ ] Set up `docker-compose` for local development.
-- [ ] **Week 4: Cloud Deployment (AWS)**
+    - [x] Set up `docker-compose` for local development.
     - [ ] Provision AWS EC2 Free Tier instance.
     - [ ] Deploy containerized application via SSH.
 
 ### Month 2: Identity & Security
 Focus: Authentication protocols, database migrations, and CI/CD pipelines.
-- [ ] **Week 5: Authentication (JWT)**
+- [ ] **Week 4: Authentication (JWT)**
     - [ ] Implement PyJWT for stateless token generation.
     - [ ] Create protected routes (No token = No data).
-- [ ] **Week 6: Database Migrations (Alembic)**
+- [ ] **Week 5: Database Migrations (Alembic)**
     - [ ] Configure Alembic for schema evolution.
     - [ ] Perform "add column" migration without data loss.
-- [ ] **Week 7: CI/CD (GitHub Actions)**
+- [ ] **Week 6: CI/CD (GitHub Actions)**
     - [ ] Create `.github/workflows/test.yml`.
     - [ ] Automate `pytest` execution on every push to `main`.
-- [ ] **Week 8: Observability (Logging)**
+- [ ] **Week 7: Observability (Logging)**
     - [ ] Implement structured logging (`structlog`) for production debugging.
 
 ### Month 3: Intelligence & Performance
 Focus: Integrating LLMs, vector search, and performance optimization.
-- [ ] **Week 9: Applied AI (RAG Pipeline)**
+- [ ] **Week 8: Applied AI (RAG Pipeline)**
     - [ ] Integrate OpenAI/Anthropic API.
     - [ ] Auto-generate summaries on note creation.
-- [ ] **Week 10: Vector Database (Pinecone)**
+- [ ] **Week 9: Vector Database (Pinecone)**
     - [ ] Implement semantic search (finding notes by meaning, not keywords).
-- [ ] **Week 11: Async Workers (Celery)**
+- [ ] **Week 10: Async Workers (Celery)**
     - [ ] Offload AI processing to background workers.
-- [ ] **Week 12: Caching & Rate Limiting**
+- [ ] **Week 11: Caching & Rate Limiting**
     - [ ] Implement Redis caching for read-heavy endpoints.
     - [ ] Add rate limiting (50 req/min) for API safety.
 
 ### Month 4: The Interface & Portfolio
 Focus: Connecting the frontend and finalizing documentation.
-- [ ] **Week 13: React Native Integration**
+- [ ] **Week 12: React Native Integration**
     - [ ] Build mobile Login & Feed screens.
-- [ ] **Week 14: Mobile Polish & Chat UI**
-- [ ] **Week 15: Technical Documentation**
+- [ ] **Week 13: Mobile Polish & Chat UI**
+- [ ] **Week 14: Technical Documentation**
     - [ ] Write "How I built a RAG pipeline" technical article.
-- [ ] **Week 16: Final Deployment & Demo**
+- [ ] **Week 15: Final Deployment & Demo**
 
 ---
 
