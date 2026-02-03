@@ -1,10 +1,36 @@
-.idea/
-__pycache__/
-*.pyc
-*.db
+# Environment variables (NEVER commit!)
 .env
+.env.production
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Testing
+.pytest_cache/
 .coverage
 htmlcov/
-.pytest_cache/
-venv/
-.venv/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+database.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

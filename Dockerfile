@@ -34,7 +34,6 @@ COPY . .
 
 # Environment variables
 ENV PORT=8000
-ENV DATABASE_URL="sqlite:///database.db"
 
 # Fix permissions
 RUN chown -R appuser:appuser /app
