@@ -39,11 +39,11 @@ Focus: Writing clean, tested code that adheres to strict typing and industry sta
     - [x] Organize tests into test_create.py and test_read.py
     - [x] Add parametrized tests for validation scenarios
     - [x] Measure code coverage with pytest-cov
-- [ ] **Week 3: Containerization (Docker) and Cloud Deployment (AWS)**
+- [x] **Week 3: Containerization (Docker) and Cloud Deployment (AWS)**
     - [x] Create `Dockerfile` for the API.
     - [x] Set up `docker-compose` for local development.
-    - [ ] Provision AWS EC2 Free Tier instance.
-    - [ ] Deploy containerized application via SSH.
+    - [x] Provision AWS EC2 Free Tier instance.
+    - [x] Deploy containerized application via SSH.
 
 ### Month 2: Identity & Security
 Focus: Authentication protocols, database migrations, and CI/CD pipelines.
