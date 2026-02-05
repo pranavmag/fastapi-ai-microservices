@@ -47,9 +47,9 @@ Focus: Writing clean, tested code that adheres to strict typing and industry sta
 
 ### Month 2: Identity & Security
 Focus: Authentication protocols, database migrations, and CI/CD pipelines.
-- [ ] **Week 4: Authentication (JWT)**
-    - [ ] Implement PyJWT for stateless token generation.
-    - [ ] Create protected routes (No token = No data).
+- [x] **Week 4: Authentication (JWT)**
+    - [x] Implement PyJWT for stateless token generation.
+    - [x] Create protected routes (No token = No data).
 - [ ] **Week 5: Database Migrations (Alembic)**
     - [ ] Configure Alembic for schema evolution.
     - [ ] Perform "add column" migration without data loss.
