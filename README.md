@@ -8,6 +8,8 @@ This repository hosts the backend infrastructure for a **microservices-based AI 
 
 The goal is to move beyond "tutorial hell" and implement production-grade patterns: **CI/CD pipelines, Docker containerization, and AWS EC2 deployment.**
 
+Demo 1 Link(Week 4): https://www.youtube.com/watch?v=lnzg8ZhjM8E 
+
 **Current Status:** Phase 1 (Foundation & Database Architecture)
 
 ---
