@@ -59,6 +59,7 @@ class Note(SQLModel, table=True):
     is_completed: bool = False
     tags: Optional[str] = Field(default=None)
     created_at: datetime = Field(default_factory=datetime.utcnow)
+    updated_at: datetime = Field(default_factory=datetime.utcnow)
     
     # Foreign key - links note to user
     user_id: int = Field(foreign_key="user.id")

@@ -10,7 +10,7 @@ The goal is to move beyond "tutorial hell" and implement production-grade patter
 
 Demo 1 Link(Week 4): https://www.youtube.com/watch?v=lnzg8ZhjM8E 
 
-**Current Status:** Phase 1 (Foundation & Database Architecture)
+**Current Status:** Phase 2 (Identity & Security)
 
 ---
 
@@ -52,10 +52,9 @@ Focus: Authentication protocols, database migrations, and CI/CD pipelines.
 - [x] **Week 4: Authentication (JWT)**
     - [x] Implement PyJWT for stateless token generation.
     - [x] Create protected routes (No token = No data).
-- [ ] **Week 5: Database Migrations (Alembic)**
-    - [ ] Configure Alembic for schema evolution.
-    - [ ] Perform "add column" migration without data loss.
-- [ ] **Week 6: CI/CD (GitHub Actions)**
+- [ ] **Week 5: Database Migrations (Alembic) & CI/CD (GitHub Actions)**
+    - [x] Configure Alembic for schema evolution.
+    - [x] Perform "add column" migration without data loss.
     - [ ] Create `.github/workflows/test.yml`.
     - [ ] Automate `pytest` execution on every push to `main`.
 - [ ] **Week 7: Observability (Logging)**
