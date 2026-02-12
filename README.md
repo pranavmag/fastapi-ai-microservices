@@ -1,4 +1,7 @@
 # fastapi-ai-microservices
+
+![Tests](https://github.com/pranavmag/fastapi-ai-microservices/actions/workflows/test.yml/badge.svg)
+
 A scalable, microservices-based AI note-taking platform. Backend engineered with Python FastAPI to handle semantic search, JWT authentication, and high-concurrency async tasks.
 
 # 🧠 AI-Powered Microservices Note-Taking API
