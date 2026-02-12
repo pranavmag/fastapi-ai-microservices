@@ -29,7 +29,7 @@ Demo 1 Link(Week 4): https://www.youtube.com/watch?v=lnzg8ZhjM8E
 
 ## 🗺 Engineering Roadmap (2026 Journey)
 
-### Month 1: The Professional Foundation
+### Part 1: The Professional Foundation
 Focus: Writing clean, tested code that adheres to strict typing and industry standards.
 - [x] **Week 1: FastAPI & SQLModel**
     - [x] Implement strict typing with Pydantic schemas.
@@ -50,40 +50,40 @@ Focus: Writing clean, tested code that adheres to strict typing and industry sta
     - [x] Provision AWS EC2 Free Tier instance.
     - [x] Deploy containerized application via SSH.
 
-### Month 2: Identity & Security
+### Part 2: Identity & Security
 Focus: Authentication protocols, database migrations, and CI/CD pipelines.
 - [x] **Week 4: Authentication (JWT)**
     - [x] Implement PyJWT for stateless token generation.
     - [x] Create protected routes (No token = No data).
-- [ ] **Week 5: Database Migrations (Alembic) & CI/CD (GitHub Actions)**
+- [x] **Week 5: Database Migrations (Alembic) & CI/CD (GitHub Actions)**
     - [x] Configure Alembic for schema evolution.
     - [x] Perform "add column" migration without data loss.
-    - [ ] Create `.github/workflows/test.yml`.
-    - [ ] Automate `pytest` execution on every push to `main`.
-- [ ] **Week 7: Observability (Logging)**
+    - [x] Create `.github/workflows/test.yml`.
+    - [x] Automate `pytest` execution on every push to `main`.
+- [ ] **Week 6: Observability (Logging)**
     - [ ] Implement structured logging (`structlog`) for production debugging.
 
-### Month 3: Intelligence & Performance
+### Part 3: Intelligence & Performance
 Focus: Integrating LLMs, vector search, and performance optimization.
-- [ ] **Week 8: Applied AI (RAG Pipeline)**
+- [ ] **Week 7: Applied AI (RAG Pipeline)**
     - [ ] Integrate OpenAI/Anthropic API.
     - [ ] Auto-generate summaries on note creation.
-- [ ] **Week 9: Vector Database (Pinecone)**
+- [ ] **Week 8: Vector Database (Pinecone)**
     - [ ] Implement semantic search (finding notes by meaning, not keywords).
-- [ ] **Week 10: Async Workers (Celery)**
+- [ ] **Week 9: Async Workers (Celery)**
     - [ ] Offload AI processing to background workers.
-- [ ] **Week 11: Caching & Rate Limiting**
+- [ ] **Week 10: Caching & Rate Limiting**
     - [ ] Implement Redis caching for read-heavy endpoints.
     - [ ] Add rate limiting (50 req/min) for API safety.
 
-### Month 4: The Interface & Portfolio
+### Part 4: The Interface & Portfolio
 Focus: Connecting the frontend and finalizing documentation.
-- [ ] **Week 12: React Native Integration**
+- [ ] **Week 11: React Native Integration**
     - [ ] Build mobile Login & Feed screens.
-- [ ] **Week 13: Mobile Polish & Chat UI**
-- [ ] **Week 14: Technical Documentation**
+- [ ] **Week 12: Mobile Polish & Chat UI**
+- [ ] **Week 13: Technical Documentation**
     - [ ] Write "How I built a RAG pipeline" technical article.
-- [ ] **Week 15: Final Deployment & Demo**
+- [ ] **Week 14: Final Deployment & Demo**
 
 ---
 
