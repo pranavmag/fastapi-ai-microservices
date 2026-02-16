@@ -13,7 +13,7 @@ The goal is to move beyond "tutorial hell" and implement production-grade patter
 
 Demo 1 Link(Week 4): https://www.youtube.com/watch?v=lnzg8ZhjM8E 
 
-**Current Status:** Phase 2 (Identity & Security)
+**Current Status:** Phase 3 (Intelligence & Performance)
 
 ---
 
@@ -60,30 +60,31 @@ Focus: Authentication protocols, database migrations, and CI/CD pipelines.
     - [x] Perform "add column" migration without data loss.
     - [x] Create `.github/workflows/test.yml`.
     - [x] Automate `pytest` execution on every push to `main`.
-- [ ] **Week 6: Observability (Logging)**
-    - [ ] Implement structured logging (`structlog`) for production debugging.
+- [x] **Week 6 Part 1: Observability (Logging)**
+    - [x] Implement structured logging (`structlog`) for production debugging.
 
 ### Part 3: Intelligence & Performance
 Focus: Integrating LLMs, vector search, and performance optimization.
-- [ ] **Week 7: Applied AI (RAG Pipeline)**
+- [ ] **Week 6 Part 2: Applied AI (RAG Pipeline)**
     - [ ] Integrate OpenAI/Anthropic API.
     - [ ] Auto-generate summaries on note creation.
-- [ ] **Week 8: Vector Database (Pinecone)**
+- [ ] **Week 7: Vector Database (Pinecone)**
     - [ ] Implement semantic search (finding notes by meaning, not keywords).
-- [ ] **Week 9: Async Workers (Celery)**
+- [ ] **Week 8: Async Workers (Celery)**
     - [ ] Offload AI processing to background workers.
-- [ ] **Week 10: Caching & Rate Limiting**
+- [ ] **Week 9: Caching & Rate Limiting**
     - [ ] Implement Redis caching for read-heavy endpoints.
     - [ ] Add rate limiting (50 req/min) for API safety.
 
 ### Part 4: The Interface & Portfolio
 Focus: Connecting the frontend and finalizing documentation.
-- [ ] **Week 11: React Native Integration**
+- [ ] **Week 10: React Native Integration**
     - [ ] Build mobile Login & Feed screens.
-- [ ] **Week 12: Mobile Polish & Chat UI**
-- [ ] **Week 13: Technical Documentation**
+- [ ] **Week 11: Mobile Polish & Chat UI**
+    - [ ] Add the "Chat" interface. Make it feel responsive
+- [ ] **Week 12: Technical Documentation**
     - [ ] Write "How I built a RAG pipeline" technical article.
-- [ ] **Week 14: Final Deployment & Demo**
+- [ ] **Week 13: Final Deployment & Demo**
 
 ---
 
