@@ -34,3 +34,5 @@ email-validator==2.1.0
 alembic==1.13.1
 
 structlog==24.1.0
+openai==1.75.0
+pytest-mock==3.14.0

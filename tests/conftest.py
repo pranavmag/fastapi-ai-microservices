@@ -54,3 +54,14 @@ def auth_token_fixture(client: TestClient, test_user: User):
 def auth_headers_fixture(auth_token: str):
     """Return authorization headers for authenticated requests."""
     return {"Authorization": f"Bearer {auth_token}"}
+
+@pytest.fixture(autouse=True)
+def mock_openai(mocker):
+    """Auto-mock OpenAI for ALL tests so they never hit the real API."""
+    mocker.patch.dict("os.environ", {"OPENAI_API_KEY": "sk-test-fake-key"})
+    mock_response = mocker.MagicMock()
+    mock_response.choices[0].message.content = "This is a mocked AI summary."
+    mock_client = mocker.MagicMock()
+    mock_client.chat.completions.create.return_value = mock_response
+    mocker.patch("ai_service.OpenAI", return_value=mock_client)
+    return mock_client

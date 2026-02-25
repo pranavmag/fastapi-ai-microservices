@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, field_validator, EmailStr
-
+from ai_service import generate_summary
 import os
 from logging_config import configure_logging, get_logger
 
@@ -61,6 +61,7 @@ class Note(SQLModel, table=True):
     content: str
     is_completed: bool = False
     tags: Optional[str] = Field(default=None)
+    ai_summary: Optional[str] = Field(default=None)
     created_at: datetime = Field(default_factory=datetime.utcnow)
     updated_at: datetime = Field(default_factory=datetime.utcnow)
     
@@ -280,6 +281,7 @@ def create_note(
     
     # Create note and link it to the current user
     note = Note(**note_input.model_dump(), user_id=current_user.id)
+    note.ai_summary = generate_summary(note.content, user_id=current_user.id)
     session.add(note)
     session.commit()
     session.refresh(note)
