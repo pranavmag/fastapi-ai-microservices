@@ -65,9 +65,10 @@ Focus: Authentication protocols, database migrations, and CI/CD pipelines.
 
 ### Part 3: Intelligence & Performance
 Focus: Integrating LLMs, vector search, and performance optimization.
-- [ ] **Week 6 Part 2: Applied AI (RAG Pipeline)**
-    - [ ] Integrate OpenAI/Anthropic API.
-    - [ ] Auto-generate summaries on note creation.
+- [x] **Week 6 Part 2: Applied AI (RAG Pipeline)**
+    - [x] Integrate OpenAI/Anthropic API.
+    - [x] Auto-generate summaries on note creation.
+    - [x] Implemented a Streamlit UI.
 - [ ] **Week 7: Vector Database (Pinecone)**
     - [ ] Implement semantic search (finding notes by meaning, not keywords).
 - [ ] **Week 8: Async Workers (Celery)**
@@ -85,12 +86,59 @@ Focus: Connecting the frontend and finalizing documentation.
 - [ ] **Week 12: Technical Documentation**
     - [ ] Write "How I built a RAG pipeline" technical article.
 - [ ] **Week 13: Final Deployment & Demo**
-
 ---
 
 ## 🚀 Getting Started (Local Dev)
 
-1. **Clone the repo**
-   ```bash
-   git clone [https://github.com/ajaym/fastapi-ai-microservices.git](https://github.com/ajaym/fastapi-ai-microservices.git)
-   cd fastapi-ai-microservices
+1. Clone the repo
+```bash
+git clone https://github.com/pranavmag/fastapi-ai-microservices.git
+cd fastapi-ai-microservices
+```
+
+2. Set up environment variables
+```bash
+cp .env.example .env
+# Edit .env and fill in your values
+nano .env
+```
+
+Your `.env` should contain:
+```
+POSTGRES_USER=your_db_user
+POSTGRES_PASSWORD=your_db_password
+POSTGRES_DB=braindump
+SECRET_KEY=your-secret-key
+OPENAI_API_KEY=sk-your-openai-key
+```
+
+3. Start the API with Docker Compose
+```bash
+docker-compose -f docker-compose.prod.yml up -d --build
+```
+
+The API will be available at `http://localhost:8000`
+Swagger docs at `http://localhost:8000/docs`
+
+4. Run the Streamlit UI
+```bash
+# Create and activate a virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the UI
+streamlit run streamlit_app.py --server.port 8501 --server.address 0.0.0.0
+```
+
+The UI will be available at `http://localhost:8501`
+
+5. Run the tests
+```bash
+source venv/bin/activate
+pip install pytest-mock
+pytest tests/ -v
+```
+
